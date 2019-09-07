@@ -1,0 +1,14 @@
+CREATE TABLE `bancos` (
+  `id` int(11) NOT NULL,
+  `codigo` varchar(3) NOT NULL,
+  `nome` varchar(100) NOT NULL,
+  `cnpj` varchar(14) NOT NULL,
+  `end_logradouro` varchar(100) DEFAULT NULL,
+  `end_numero` varchar(10) DEFAULT NULL,
+  `end_complemento` varchar(100) DEFAULT NULL,
+  `end_bairro` varchar(50) DEFAULT NULL,
+  `end_cep` varchar(8) DEFAULT NULL,
+  `end_cidade` varchar(100) DEFAULT NULL,
+  `end_estado` varchar(20) DEFAULT NULL,
+  `data_cadastro` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
