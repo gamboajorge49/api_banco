@@ -8,94 +8,142 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="contas")
+@Table(name = "contas")
 public class Conta {
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private long id ;
-	 private String codigo;
-	 private String nome;
-	 private String cnpj;
-	 private String end_logradouro;
-	 private String end_numero;
-	 private String end_complemento ;
-	 private String end_bairro;
-	 private String end_cep;
-	 private String end_cidade;
-	 private String end_estado;
-	 private Date data_cadastro ;
-	 
-	public String getCodigo() {
-		return codigo;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long id;
+	
+	private String id_agencia;
+	private String numero;
+	private String cliente_nome;
+	private String cliente_cpf;
+	private String cliente_end_logradouro;
+	private String cliente_end_numero;
+	private String cliente_end_bairro;
+	private String cliente_end_complemento;
+	private String cliente_end_cidade;
+	private String cliente_end_estado;
+	private String cliente_end_cep;
+	private String tipo;
+	private float saldo;
+	private Date data_cadastro;
+
+	public String getId_agencia() {
+		return id_agencia;
 	}
-	public void setCodigo(String codigo) {
-		this.codigo = codigo;
+
+	public void setId_agencia(String id_agencia) {
+		this.id_agencia = id_agencia;
 	}
-	public String getNome() {
-		return nome;
+
+	public String getNumero() {
+		return numero;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+
+	public void setNumero(String numero) {
+		this.numero = numero;
 	}
-	public String getCnpj() {
-		return cnpj;
+
+	public String getCliente_nome() {
+		return cliente_nome;
 	}
-	public void setCnpj(String cnpj) {
-		this.cnpj = cnpj;
+
+	public void setCliente_nome(String cliente_nome) {
+		this.cliente_nome = cliente_nome;
 	}
-	public String getEnd_logradouro() {
-		return end_logradouro;
+
+	public String getCliente_cpf() {
+		return cliente_cpf;
 	}
-	public void setEnd_logradouro(String end_logradouro) {
-		this.end_logradouro = end_logradouro;
+
+	public void setCliente_cpf(String cliente_cpf) {
+		this.cliente_cpf = cliente_cpf;
 	}
-	public String getEnd_numero() {
-		return end_numero;
+
+	public String getCliente_end_logradouro() {
+		return cliente_end_logradouro;
 	}
-	public void setEnd_numero(String end_numero) {
-		this.end_numero = end_numero;
+
+	public void setCliente_end_logradouro(String cliente_end_logradouro) {
+		this.cliente_end_logradouro = cliente_end_logradouro;
 	}
-	public String getEnd_complemento() {
-		return end_complemento;
+
+	public String getCliente_end_numero() {
+		return cliente_end_numero;
 	}
-	public void setEnd_complemento(String end_complemento) {
-		this.end_complemento = end_complemento;
+
+	public void setCliente_end_numero(String cliente_end_numero) {
+		this.cliente_end_numero = cliente_end_numero;
 	}
-	public String getEnd_bairro() {
-		return end_bairro;
+
+	public String getCliente_end_bairro() {
+		return cliente_end_bairro;
 	}
-	public void setEnd_bairro(String end_bairro) {
-		this.end_bairro = end_bairro;
+
+	public void setCliente_end_bairro(String cliente_end_bairro) {
+		this.cliente_end_bairro = cliente_end_bairro;
 	}
-	public String getEnd_cep() {
-		return end_cep;
+
+	public String getCliente_end_complemento() {
+		return cliente_end_complemento;
 	}
-	public void setEnd_cep(String end_cep) {
-		this.end_cep = end_cep;
+
+	public void setCliente_end_complemento(String cliente_end_complemento) {
+		this.cliente_end_complemento = cliente_end_complemento;
 	}
-	public String getEnd_cidade() {
-		return end_cidade;
+
+	public String getCliente_end_cidade() {
+		return cliente_end_cidade;
 	}
-	public void setEnd_cidade(String end_cidade) {
-		this.end_cidade = end_cidade;
+
+	public void setCliente_end_cidade(String cliente_end_cidade) {
+		this.cliente_end_cidade = cliente_end_cidade;
 	}
-	public String getEnd_estado() {
-		return end_estado;
+
+	public String getCliente_end_estado() {
+		return cliente_end_estado;
 	}
-	public void setEnd_estado(String end_estado) {
-		this.end_estado = end_estado;
+
+	public void setCliente_end_estado(String cliente_end_estado) {
+		this.cliente_end_estado = cliente_end_estado;
 	}
+
+	public String getCliente_end_cep() {
+		return cliente_end_cep;
+	}
+
+	public void setCliente_end_cep(String cliente_end_cep) {
+		this.cliente_end_cep = cliente_end_cep;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public float getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(float saldo) {
+		this.saldo = saldo;
+	}
+
 	public Date getData_cadastro() {
 		return data_cadastro;
 	}
+
 	public void setData_cadastro(Date data_cadastro) {
 		this.data_cadastro = data_cadastro;
 	}
+
 	public long getId() {
 		return id;
 	}
-	
-	
 
 }

@@ -1,5 +1,5 @@
 CREATE TABLE `bancos` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `codigo` varchar(3) NOT NULL,
   `nome` varchar(100) NOT NULL,
   `cnpj` varchar(14) NOT NULL,
@@ -10,5 +10,6 @@ CREATE TABLE `bancos` (
   `end_cep` varchar(8) DEFAULT NULL,
   `end_cidade` varchar(100) DEFAULT NULL,
   `end_estado` varchar(20) DEFAULT NULL,
-  `data_cadastro` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8
+  `data_cadastro` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`,`codigo`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8

@@ -84,9 +84,9 @@ public class Extrato {
 		return idConta;
 	}
 
-	Extrato(long idConta) {
+	/*Extrato(long idConta) {
 		this.idConta = idConta;
 
-	}
+	}*/
 
 }

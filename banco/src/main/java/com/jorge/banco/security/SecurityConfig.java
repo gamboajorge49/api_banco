@@ -26,12 +26,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.inMemoryAuthentication().withUser("jorge").password("1234").roles("ADMIN");
-		auth.inMemoryAuthentication().withUser("teste").password("teste").roles("ADMIN");
+		auth.inMemoryAuthentication().withUser("jorge").password("1234").roles("ADMIN")
+		.and().withUser("alexandre").password("123").roles("USER")
+		.and().withUser("thiago").password("123").roles("USER");
 	}
 
 	@Bean
-	/*Este metodo não ira fazer nenhuma encriptação ou geração de hash por enquanto!*/
+	/*
+	 * Este metodo não ira fazer nenhuma encriptação ou geração de hash por
+	 * enquanto!
+	 */
 	public PasswordEncoder passwordEncoder() {
 		return NoOpPasswordEncoder.getInstance();
 	}

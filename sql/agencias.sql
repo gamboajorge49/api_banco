@@ -1,5 +1,5 @@
 CREATE TABLE `agencias` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `codigo` varchar(3) NOT NULL,
   `nome` varchar(100) NOT NULL,
   `cnpj` varchar(14) NOT NULL,
@@ -11,5 +11,6 @@ CREATE TABLE `agencias` (
   `end_cidade` varchar(50) DEFAULT NULL,
   `end_estado` varchar(20) DEFAULT NULL,
   `end_cep` varchar(8) DEFAULT NULL,
-  `id_banco` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8
+  `id_banco` int(11) NOT NULL,
+  PRIMARY KEY (`id`,`codigo`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8

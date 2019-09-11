@@ -12,6 +12,5 @@ import com.jorge.banco.model.Extrato;
 public interface ExtratoRepository extends JpaRepository<Extrato,Integer> {
 
 	/*@Query(value="select e from Extrato e where e.id_conta = :id_conta")
-    public List<Extrato> findAll(@Param("id_conta") int id_conta);*/
-	
+    public List<Extrato> findAll(@Param("id_conta") int id_conta);*/	
 }
