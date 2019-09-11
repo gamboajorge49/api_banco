@@ -11,3 +11,17 @@ Projeto de api para um sistema bancário,utilizando a framework Spring Boot com 
 </ul>
 
 A aplicação utiliza o padrão OAuth 2.0, que gera um token, por tempo limitado, para acesso aos dados e realização de cadastros.
+
+
+# Metódos
+Get: http://127.0.0.1:8080/oauth/token
+Get: http://127.0.0.1:8080/api/extrato
+Get: http://127.0.0.1:8080/api/banco/{Id}
+Get: http://127.0.0.1:8080/api/bancos
+Get: http://127.0.0.1:8080/api/transacao
+
+
+
+
+
+
